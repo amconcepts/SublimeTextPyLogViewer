@@ -1,0 +1,25 @@
+%YAML 1.2
+---
+# See http://www.sublimetext.com/docs/3/syntax.html
+file_extensions:
+  - log
+scope: debug.pylog
+contexts:
+  main:
+    - match: '::DEBUG::'
+      scope: DEBUG.pylog
+    
+    - match: '::INFO::'
+      scope: INFO.pylog
+
+    - match: '::CRITICAL::'
+      scope: CRITICAL.pylog
+    
+    - match: '::WARNNING::'
+      scope: WARNNING.pylog
+
+    - match: '::ERROR::'
+      scope: ERROR.pylog
+    
+    - match: '::INFO::'
+      scope: INFO.pylog
